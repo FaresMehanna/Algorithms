@@ -13,7 +13,7 @@
  * elemsize : store the client-supplied size of each element in the array of data
  * len : store the client-supplied length of the array
  * CmpFN : points to the function Which will be called to compare any two elements
- * left,mid,right : define the boundries of each two arrays whicl will be sent to Merge
+ * left,mid,right : define the boundaries of each two arrays which will be sent to Merge
  */
 typedef struct {
 	void  *array;
