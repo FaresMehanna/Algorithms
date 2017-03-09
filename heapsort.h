@@ -1,17 +1,10 @@
 /** 
- * File: heaps1.h
+ * File: heapsort.h
  * ---------------
- * Defines the interface for the heaps.
+ * Defines the interface for the heapsort.
  *
- * This version of the heap allows the user to add generic item related
- * with float weight, it's implement both Max and Min heaps and allow
- * the user to build the heap from array and insert more element to it 
- * or just use insertion, the heap has no upper bound for it's size 
- * The client specifies the size (in bytes) of the elements that will be
- * stored in the heap when it is created.  Thereafter the client and 
- * the heap can refer to elements via (void *) ptrs. and the client must
- * iclude the Free function if the client malloc-ed the elements before the
- * insertion.
+ * Given an array this function will sort the given array in place
+ * using heaps
  */
 
 #ifndef _heapsort_
@@ -21,7 +14,7 @@
 /** 
  * Type: CompareFunction
  * ---------------
- * Defines the interface for the heaps.
+ * The function which will compare the array's elements
  *
  * CompareFunction is pointer to lient-supplied function to compare elements, This function
  * will recieve two pointers to the element the heap wants to compare and return the value
