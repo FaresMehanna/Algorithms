@@ -1,14 +1,13 @@
 /** 
- * File: heapsort.h
+ * File: bubblesort.h
  * ---------------
- * Defines the interface for the heapsort.
+ * Defines the interface for the bubblesort.
  *
- * Given an array this function will sort the given array in place
- * using heaps
+ * Given an generic array this function will sort the given array using Bubble sort
  */
 
-#ifndef _heapsort_
-#define _heapsort_
+#ifndef _bubblesort_
+#define _bubblesort_
 
 
 /** 
@@ -17,13 +16,13 @@
  * The function which will compare the array's elements
  *
  * CompareFunction is pointer to client-supplied function to compare elements, This function
- * will recieve two pointers to the element the heap wants to compare and return the value
- * 0 or 1 , by changing how it do the comparison you can sort ASC or DESC
+ * will recieve two pointers to the element to compare and return the value 0 or 1 , 
+ * by changing how it do the comparison you can sort ASC or DESC
  */
 typedef int (*CompareFunction) (void*,void*);
 
 /** 
- * Function: Heapsort
+ * Function: Bubblesort
  * ---------------
  * Sort given generic array
  *
@@ -31,7 +30,7 @@ typedef int (*CompareFunction) (void*,void*);
  * the number of byte for each element in the array
  * pointer to the compare function which will be used to compare the items in the array
  */
-void Heapsort(void* array, int elemsize, int len, CompareFunction);
+void Bubblesort(void* array, int elemsize, int len, CompareFunction);
 
 
 #endif
